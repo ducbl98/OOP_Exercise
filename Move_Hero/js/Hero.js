@@ -75,7 +75,8 @@ class Hero {
     }
 }
 
-let hero = new Hero('Katakuri.png', 20, 30, 200, 10)
+let hero = new Hero('Katakuri.png', 20, 30, 200, 50)
+
 function goRight() {
     if (hero.left < window.innerWidth - hero.size) {
         hero.moveRight();
@@ -83,6 +84,7 @@ function goRight() {
     document.getElementById('game').innerHTML = hero.getHeroElement();
     setTimeout(goRight, 500)
 }
+
 function goDown() {
     if (hero.top < window.innerHeight - hero.size) {
         hero.moveDown();
@@ -90,5 +92,9 @@ function goDown() {
     document.getElementById('game').innerHTML = hero.getHeroElement();
     setTimeout(goDown, 500)
 }
+
 goRight()
-goDown()
+
+
+
+
