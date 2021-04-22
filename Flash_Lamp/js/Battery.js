@@ -1,5 +1,5 @@
 class Battery {
-    constructor() {
+    constructor(energy) {
         this._energy = energy;
     }
 
