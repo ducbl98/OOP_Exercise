@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remote</title>
+    <script src="js/Remote.js"></script>
+    <script src="js/Television.js"></script>
+</head>
+<body>
+</body>
+<script>
+    let tele = new Television(5,30,true,20)
+    let rm= new Remote(20)
+    rm.changeVolume(tele,-10)
+    console.log(tele.volume)
+</script>
+</html>
