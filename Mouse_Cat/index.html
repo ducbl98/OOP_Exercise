@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Cat</title>
+    <script src="js/Cat.js"></script>
+    <script src="js/Mouse.js"></script>
+</head>
+<body>
+</body>
+<script>
+    let cat = new Cat("Tom", 15, 10)
+    let mouse = new Array()
+    let mouse1 = new Mouse("Jerry", 10, 1)
+    let mouse2 = new Mouse("Louis", 16, 1)
+    mouse.push(mouse1)
+    mouse.push(mouse2)
+    for (let i = 0; i < mouse.length; i++) {
+        cat.catchMouse(mouse[i])
+    }
+    console.log(cat.weight)
+
+</script>
+</html>
